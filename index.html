@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="img"><img class="image" src ="./assets/welcome.png"></div>
+        <div>
+        <h1 class="main-heading">Know your BMI and take control of yourselves.</h1>
+        </div>
+    <div class="bmicont">
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form id="bmi-form">
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <div id="result">
+            <p id="bmi-value"></p>
+            <p id="bmi-category"></p>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="bmi.js"></script>
+</html>
